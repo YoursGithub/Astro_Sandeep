@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Search</title>
+</head>
+<body class="bg-[#EDEDED]">
+    <div class="flex justify-center items-center">
+        <div class="w-[250px] h-screen bg-[#F77F00] fixed left-0 top-0 overflow-y-auto hidden     lg:block z-50">            
+            <ul class="mt-48 ml-5 text-xl">
+                    <li class="mb-8">
+                <a href="index.html" class="flex items-center px-4 py-2 text-gray-800 gap-3">
+                    <img src="./images/image 23.png" class="w-6 h-6 mr-2" alt=""> Home
+                </a>
+            </li>
+                    <li class="mb-8  bg-white mr-12 rounded-full">
+                <a href="search.html" class="flex items-center px-4 py-2 text-gray-800 gap-3">
+                    <img src="./images/image 24.png" class="w-6 h-6 mr-2" alt=""> Search
+                </a>
+            </li>
+                    <li class="mb-8">
+                <a href="granthas.html" class="flex items-center px-4 py-2 text-gray-800 gap-3">
+                    <img src="./images/image 25.png" class="w-6 h-6 mr-2" alt=""> EBooks
+                </a>
+            </li>
+            
+            <li class="mb-8">
+                <a href="matchmaking.html" class="flex items-center px-4 py-2 text-gray-800 gap-3">
+                    <img src="./images/image 26.png" class="w-6 h-6 mr-2" alt=""> Matchmaking
+                </a>
+            </li>
+
+            <a href="profile.html" class="flex gap-3 ml-4">
+                <div class="rounded-full p-4 w-6 h-6 bg-black "></div>
+                <p class="font-light text-gray-800 ">Profile</p>
+            </a>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container mx-auto p-4 lg:pl-80 mt-5">
+        <form action="#" method="GET" class="relative flex items-center border border-gray-300 bg-white rounded-md">
+            <input type="text" name="search" id="search" placeholder="Search..." class="px-2 py-2 w-full text-sm focus:outline-none">
+            <div class="flex items-center h-full">
+                <div class="relative group">
+                    <img src="./images/settings-sliders.svg" alt="Hover image" class="h-6 w-5 mr-10 cursor-pointer" id="hoverImage">
+                    <div class="hidden absolute right-0 top-full z-10 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 group-hover:block" id="dropdown">
+                        <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Sangathan</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Books</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Profiles</a>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="bg-black text-white px-4 py-2 rounded-r-md">Search</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        const hoverImage = document.getElementById('hoverImage');
+    const dropdown = document.getElementById('dropdown');
+
+    hoverImage.addEventListener('mouseenter', () => {
+        dropdown.classList.remove('hidden');
+    });
+
+    hoverImage.addEventListener('mouseleave', () => {
+        setTimeout(() => {
+            if (!dropdown.matches(':hover')) {
+                dropdown.classList.add('hidden');
+            }
+        }, 200);
+    });
+
+    dropdown.addEventListener('mouseleave', () => {
+        dropdown.classList.add('hidden');
+    });
+    </script>
+    
+    
+</body>
+</html>
