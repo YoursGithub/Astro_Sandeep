@@ -45,72 +45,45 @@
         <form action="#" method="GET" class="relative flex items-center border border-gray-300 bg-white rounded-md">
             <input type="text" name="search" id="search" placeholder="Search..." class="px-2 py-2 w-full text-sm focus:outline-none">
             <div class="flex items-center h-full">
-                <div class="relative group">
-                    <img src="./images/settings-sliders.svg" alt="Hover image" class="h-6 w-5 mr-10 cursor-pointer" id="hoverImage">
-                    <div class="hidden absolute right-0 top-full z-10 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 group-hover:block" id="dropdown">
-                        <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Sangathans</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Books</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Profiles</a>
-                        </div>
-                    </div>
-                </div>
+                
                 <button type="submit" class="bg-black text-white px-4 py-2 rounded-r-md">Search</button>
             </div>
-        </form>
-    </div>
-    <div class="">
-        <h3 class="ml-10 lg:ml-80 mt-10 text-2xl">Search results for</h3>
-    </div>
 
-    <div>
-        <div class="flex flex-wrap ml-5 lg:ml-72 gap-10">
-            <div class="ml-10 mt-10">
-                <a href="books.html">
-                <img src="./images/image.png" alt="">
-                <p class="ml-10 mt-2">Profile</p>
-                </a>
+        </form>
+        <div class="flex flex-wrap gap-2 pt-5 items-center justify-center px-4 sm:px-6 lg:px-8">
+            <div class="px-4 py-2 bg-black text-white border rounded-full">
+                Sangathans
             </div>
-            <div class="ml-10 mt-10">
-                <img src="./images/image.png" alt="">
-                <p class="ml-10 mt-2">Profile</p>
+            <div class="px-4 py-2 bg-black text-white border rounded-full">
+                Books
             </div>
-            <div class="ml-10 mt-10">
-                <img src="./images/image.png" alt="">
-                <p class="ml-10 mt-2">Profile</p>
-            </div>
-            <div class="ml-10 mt-10">
-                <img src="./images/image.png" alt="">
-                <p class="ml-10 mt-2">Profile</p>
-            </div>
-            <div class="ml-10 mt-10">
-                <img src="./images/image.png" alt="">
-                <p class="ml-10 mt-2">Profile</p>
-            </div>
-            <div class="ml-10 mt-10">
-                <img src="./images/image.png" alt="">
-                <p class="ml-10 mt-2">Profile</p>
-            </div>
-            <div class="ml-10 mt-10">
-                <img src="./images/image.png" alt="">
-                <p class="ml-10 mt-2">Profile</p>
-            </div>
-            <div class="ml-10 mt-10">
-                <img src="./images/image.png" alt="">
-                <p class="ml-10 mt-2">Profile</p>
-            </div>
-            <div class="ml-10 mt-10">
-                <img src="./images/image.png" alt="">
-                <p class="ml-10 mt-2">Profile</p>
-            </div>
-            <div class="ml-10 mt-10">
-                <img src="./images/image.png" alt="">
-                <p class="ml-10 mt-2">Profile</p>
+            <div class="px-4 py-2 bg-black text-white border rounded-full">
+                Profiles
             </div>
         </div>
-       
     </div>
-    
+
+    <div class="">
+        <h3 class="ml-5 lg:ml-96 mt-10 text-2xl">Search results for</h3>
+    </div>
+
+    <div class="flex flex-col items-center space-y-4 mt-10 w-full max-w-3xl px-4 lg:ml-[350px]">
+        <div class="bg-white rounded-lg shadow-md p-4 flex items-center w-full">
+            <img src="" alt="Profile 1" class="w-16 h-16 rounded-full object-cover mr-4">
+            <div>
+                <h4 class="font-semibold">User Name 1</h4>
+                <p class="text-sm text-gray-600">1.5k followers</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 flex items-center w-full">
+            <img src="" alt="Profile 2" class="w-16 h-16 rounded-full object-cover mr-4">
+            <div>
+                <h4 class="font-semibold">User Name 2</h4>
+                <p class="text-sm text-gray-600">2.3k followers</p>
+            </div>
+        </div>
+</div>
 
     <script>
         const hoverImage = document.getElementById('hoverImage');
@@ -132,5 +105,6 @@
         dropdown.classList.add('hidden');
     });
     </script>
+    
 </body>
 </html>
